@@ -14,6 +14,7 @@ const Checkout = () => {
           </div>
         </div>
         <div className="checkout-wrapper">
+          {/* Form Column */}
           <div>
             <button className='btn-primary mr-3'>Log in</button>
             <button className='btn-secondary'>Sign up</button>
@@ -41,7 +42,8 @@ const Checkout = () => {
               </div>
             </form>
           </div>
-          <div>
+          {/* Payment Column */}
+          <div className='payment-column'>
             <h2>Payment Method</h2>
             <div class="payment-container">
               <div className='payment-option'>
@@ -63,7 +65,27 @@ const Checkout = () => {
                 <img src="https://www.stickpng.com/img/download/580b57fcd9996e24bc43c530/image" alt="paypal" />
               </div>
             </div>
+            <h2>Delivery Method</h2>
+            <div className="delivery-container">
+              <div className="delivery-option">
+                <img src="https://i.postimg.cc/J7NLR2dk/inpost-logo-F04-BCA29-D0-seeklogo-com-1.png" alt="paypal" />
+                <p>$12.00</p>
+              </div>
+              <div className="delivery-option">
+                <img src="https://i.postimg.cc/6qXxdrTq/dpd.png" alt="paypal" />
+                <p>$20.00</p>
+              </div>
+              <div className="delivery-option">
+                <img src="https://i.postimg.cc/T1JMQKW9/png-transparent-dhl-hd-logo-1.png" alt="paypal" />
+                <p>$15.00</p>
+              </div>
+              <div className="delivery-option">
+                <img src="https://i.postimg.cc/ydpFwj4p/FedEx.png" alt="paypal" />
+                <p>$10.00</p>
+              </div>
+            </div>
           </div>
+          {/* Cart Item Column */}
           <div>
             <h2>Your Cart</h2>
             <div className="cart-wrapper">
@@ -95,6 +117,10 @@ const Checkout = () => {
             <div className="sub-total">
               <p>Total Cost</p>
               <strong>$159.98</strong>
+            </div>
+            <div className="free-shipping">
+              <i class="ri-truck-line"></i>
+              <p> You are <b>$30,02</b> away from free shipping!</p>
             </div>
           </div>
         </div>
