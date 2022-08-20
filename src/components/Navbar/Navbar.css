@@ -1,0 +1,49 @@
+.navbar-container {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgb(163, 163, 163)
+}
+
+.navbar-container i {
+  font-size: 25px;
+}
+
+.navbar-container .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.logo i {
+  color: #f1c40f;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nabar li a {
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar li a:hover {
+  color: #f1c40f;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 1rem;
+}
